@@ -111,7 +111,7 @@ public class SecurityConfig {
 
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "https://instagram-clone-kxzxpzt6k-nandhakumar2.vercel.app"
+                "https://instagram-clone-kajhkhtgc-nandhakumar2.vercel.app"
         ));
 
         configuration.setAllowedMethods(List.of(
