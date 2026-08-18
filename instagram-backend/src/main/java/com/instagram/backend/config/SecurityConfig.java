@@ -109,10 +109,10 @@ public class SecurityConfig {
         CorsConfiguration configuration =
                 new CorsConfiguration();
 
-        configuration.setAllowedOrigins(List.of(
-                "http://localhost:5173",
-                "https://instagram-clone-kajhkhtgc-nandhakumar2.vercel.app"
-        ));
+       configuration.setAllowedOrigins(List.of(
+        "http://localhost:5173",
+        "https://instagram-clone-ashen-eight.vercel.app"
+));
 
         configuration.setAllowedMethods(List.of(
                 "GET",
