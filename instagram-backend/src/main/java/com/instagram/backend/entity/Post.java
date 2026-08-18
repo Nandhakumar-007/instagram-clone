@@ -22,8 +22,8 @@ public class Post {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @Column(nullable = false)
-    private String imageUrl;
+ @Column(nullable = false, columnDefinition = "LONGTEXT")
+private String imageUrl;
 
     @Column(length = 2200)
     private String caption;
