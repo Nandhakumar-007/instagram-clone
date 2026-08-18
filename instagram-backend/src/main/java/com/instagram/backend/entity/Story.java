@@ -21,8 +21,8 @@ public class Story {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @Column(nullable = false)
-    private String mediaUrl;
+    @Column(nullable = false, columnDefinition = "LONGTEXT")
+private String mediaUrl;
 
     @Column(nullable = false)
     private LocalDateTime createdAt;
