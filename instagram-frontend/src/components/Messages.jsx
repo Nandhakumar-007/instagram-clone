@@ -58,8 +58,6 @@ export default function Messages() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Handles "/messages?user=someusername" - this is how the Message
-  // button on a profile (or the followers/following list) opens a chat.
   useEffect(() => {
     const targetUsername = searchParams.get("user");
     if (!targetUsername) return;
@@ -100,7 +98,11 @@ export default function Messages() {
       </div>
 
       <div className="chat-panel">
-        <Chatwindow conversation={activeConversation} currentUser={user} />
+        <Chatwindow
+          conversation={activeConversation}
+          currentUser={user}
+          onBack={() => setActiveId(null)}
+        />
       </div>
 
       {showNewMessage && (

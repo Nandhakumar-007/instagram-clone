@@ -2834,3 +2834,16 @@ a {
         opacity: 1;
     }
 }
+@media (max-width: 768px) {
+    .chat-panel {
+        display: none;
+    }
+
+    .messages-page:has(.chat-window) .conv-panel {
+        display: none;
+    }
+
+    .messages-page:has(.chat-window) .chat-panel {
+        display: flex;
+    }
+}
